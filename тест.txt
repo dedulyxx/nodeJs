@@ -1,0 +1,23 @@
+npm install dotenv
+
+
+Сначала нужно стартануть бд 
+Запустить compose
+docker-compose -f docker-compose.yml up -d
+
+Запустить код - node app_bd.js
+
+Через постман можно делать запросы:
+
+GET - http://localhost:5000/api/users
+POST - http://localhost:5000/api/users
+{
+  "name": "testTestovich",
+  "email": "testTestovich@test.com"
+}
+PUT - http://localhost:5000/api/users/id
+{
+  "name": "newNameTestovich",
+  "email": "newNameTestovich@test.com"
+}
+DELETE - http://localhost:5000/api/users/id
